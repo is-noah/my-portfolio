@@ -1,0 +1,111 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  background-color: aqua;
+}
+
+
+/*header maquetado */
+.header1{
+    border:2px solid black ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-bottom: 10px;
+}
+/*010101010010100101001010100101*/
+.myphoto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  border: 3px solid black;
+  cursor: pointer;
+  /*margin-left: 600px;*/
+}
+/*Configurar un Hover Aqui*/
+.photo:hover {
+  transition: 0.5s;
+  width: 180px;
+  height: 180px;
+}
+.myphoto p:hover {
+  transition: 0.5s;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  border: 1px solid black;
+}
+/*///////////////////////////*/
+.presentation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: left;
+  flex-direction: column;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/*.cargo {
+  margin-left: 5px;
+}
+*/
+.style-skills {
+  text-align: center;
+  font-family: cursive;
+}
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(192, 0, 0);
+  margin-bottom: 10px;
+}
+.language img {
+  width: 200px;
+  border-radius: 15px;
+  margin: 10px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 300px;
+  background: #fefefe;
+  border: 3px solid black;
+  margin: 15px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+.networks{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    height: 50px;
+}
+.networks i{
+    font-size: 40px;
+}
+
+.networks i:hover{
+    color: blue;
+    transition: 0.5s;
+}
