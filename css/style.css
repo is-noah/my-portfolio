@@ -85,6 +85,7 @@ body {
 }
 .git i{
   margin-right: 8px;
+  margin-bottom: 40px;
 }
 .git i:hover {
   color: rgb(255, 0, 208);
@@ -97,10 +98,22 @@ body {
   justify-content: center;
 }
 
-/*.cargo {
-  margin-left: 5px;
+.skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.678);
+  color: white;
+  margin-top: 2px;
 }
-*/
+.skills i{
+  font-size: 80px;
+}
+.aboutme{
+  width: 50%;
+  text-align: justify;
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -147,12 +160,9 @@ footer {
     display: flex;
     font-size: 50px;
   }
-  /*.hovername:hover {
-    transition: 0.5s;
-    font-size: 50px;
-    color: aqua;
-    cursor: pointer;
-  }*/
+  .skills i{
+    font-size: 60px;
+  }
   .presentation {
     font-size: 15px;
   }
