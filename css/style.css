@@ -106,13 +106,15 @@ body {
   background-color: rgba(0, 0, 0, 0.678);
   color: white;
   margin-top: 2px;
+  margin-bottom: 2px;
 }
 .skills i{
   font-size: 80px;
+  margin-bottom: 15px;
 }
 .aboutme{
   width: 50%;
-  text-align: justify;
+  text-align: left;
 }
 footer {
   display: flex;
