@@ -1,33 +1,56 @@
-*{
-    font-family: 'Roboto Mono', monospace;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+  font-family: "Roboto Mono", monospace;
+}
 body {
-  background-color: aqua;
+  background-color: #210758;
 }
-
+/* for background*/
+.for-back {
+  background-image: url(/images/1218911.jpg);
+  background-position: 50%;
+  background-size: cover;
+  display: table;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto Mono", monospace;
+}
+/*010101010010100101001010100101*/
 
 /*header maquetado */
-.header1{
-    border:2px solid black ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    margin-bottom: 10px;
+.header1 {
+  display: flex;
+  background-color: #180540;
+  color: white;
+  border: 2px solid black;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: small;
+  margin-bottom: 1px;
+}
+.header1 h1 {
+  margin-left: 15px;
+  color: aqua;
 }
 /*010101010010100101001010100101*/
 .myphoto {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   flex-direction: column;
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 .photo {
   width: 150px;
   height: 150px;
   border-radius: 100px;
-  border: 3px solid black;
+  border: 2px solid aqua;
   cursor: pointer;
   /*margin-left: 600px;*/
 }
@@ -37,75 +60,103 @@ body {
   width: 180px;
   height: 180px;
 }
-.myphoto p:hover {
-  transition: 0.5s;
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-  border: 1px solid black;
-}
 /*///////////////////////////*/
+
+.hovername:hover {
+  transition: 0.5s; 
+  color: aqua;
+  cursor: pointer;
+}
 .presentation {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: left;
   flex-direction: column;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  margin-left: 12px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
+
+.git {
+  display: flex;
+  font-size: 60px;
+  
+}
+.git i{
+  margin-right: 8px;
+}
+.git i:hover {
+  color: rgb(255, 0, 208);
+  transition: 0.5s;
+}
+.presentation .git {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*.cargo {
   margin-left: 5px;
 }
 */
-.style-skills {
-  text-align: center;
-  font-family: cursive;
-}
-.skills {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid rgb(192, 0, 0);
-  margin-bottom: 10px;
-}
-.language img {
-  width: 200px;
-  border-radius: 15px;
-  margin: 10px;
-}
-.card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 300px;
-  background: #fefefe;
-  border: 3px solid black;
-  margin: 15px;
-}
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: #180540;
   color: white;
+  cursor: pointer;
+  border: 2px solid black;
 }
-.networks{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 300px;
-    height: 50px;
+.networks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+  height: 50px;
+  /*margin: 0;
+  padding: 0;*/
 }
-.networks i{
-    font-size: 40px;
+.networks i {
+  font-size: 40px;
 }
 
-.networks i:hover{
-    color: blue;
+.networks i:hover {
+  color: rgb(255, 0, 208);
+  transition: 0.5s;
+}
+.upbtn {
+  font-size: 50px;
+}
+@media screen and (max-width: 700px) {
+  .photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  .photo:hover {
     transition: 0.5s;
+    width: 120px;
+    height: 120px;
+  }
+  .git  {
+    display: flex;
+    font-size: 50px;
+  }
+  /*.hovername:hover {
+    transition: 0.5s;
+    font-size: 50px;
+    color: aqua;
+    cursor: pointer;
+  }*/
+  .presentation {
+    font-size: 15px;
+  }
+  .header1 h1 {
+    font-size: 20px;
+  }
 }
