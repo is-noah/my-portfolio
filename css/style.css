@@ -6,6 +6,7 @@
 }
 body {
   background-color: #210758;
+  /*height: 100vh;*/
 }
 /* for background*/
 .for-back {
@@ -30,9 +31,11 @@ body {
   justify-content: flex-start;
   font-size: small;
   margin-bottom: 1px;
+  
 }
 .header1 h1 {
   margin-left: 15px;
+  font-size: 2rem;
   color: aqua;
 }
 /*010101010010100101001010100101*/
