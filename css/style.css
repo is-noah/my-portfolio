@@ -77,8 +77,11 @@ body {
   justify-content: left;
   flex-direction: column;
   color: white;
-  margin-left: 12px;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.presentation h2{
+  margin-left: 12px;
 }
 
 .git {
@@ -211,7 +214,7 @@ footer {
 }
 
 
-/*Esto es una copia chavales*/
+/*Esto es una copia chavales esto es la barra de navegacion de colores*/
 ::-webkit-scrollbar {
   width: 0;
 }
