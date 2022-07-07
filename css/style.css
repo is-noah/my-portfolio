@@ -31,7 +31,6 @@ body {
   justify-content: flex-start;
   font-size: small;
   margin-bottom: 1px;
-  
 }
 .header1 h1 {
   margin-left: 15px;
@@ -55,18 +54,19 @@ body {
   border-radius: 100px;
   border: 2px solid aqua;
   cursor: pointer;
+  transition: ease-out 0.5s;
   /*margin-left: 600px;*/
 }
 /*Configurar un Hover Aqui*/
 .photo:hover {
-  transition: 0.5s;
   width: 180px;
   height: 180px;
+  transition: ease 0.5s;
 }
 /*///////////////////////////*/
 
 .hovername:hover {
-  transition: 0.5s; 
+  transition: 0.5s;
   color: aqua;
   cursor: pointer;
 }
@@ -84,9 +84,8 @@ body {
 .git {
   display: flex;
   font-size: 60px;
-  
 }
-.git i{
+.git i {
   margin-right: 8px;
   margin-bottom: 40px;
 }
@@ -101,7 +100,7 @@ body {
   justify-content: center;
 }
 
-.skills{
+.skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,14 +110,52 @@ body {
   margin-top: 2px;
   margin-bottom: 2px;
 }
-.skills i{
+.dateskill{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.skills i {
   font-size: 80px;
   margin-bottom: 15px;
 }
-.aboutme{
+.aboutme {
   width: 50%;
   text-align: left;
 }
+
+/*Section Works Chavales*/
+.works {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.678);
+  margin-bottom: 2px;
+}
+.work_1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 500px;
+  height: 250px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  background-image: url(/images/skills_1.png);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid aqua;
+  transition: ease-out 0.2s;
+  cursor: pointer;
+}
+.work_1:hover{
+  transition: ease-in 0.2s;
+  border: 3px solid aqua;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -161,11 +198,11 @@ footer {
     width: 120px;
     height: 120px;
   }
-  .git  {
+  .git {
     display: flex;
     font-size: 50px;
   }
-  .skills i{
+  .skills i {
     font-size: 60px;
   }
   .presentation {
@@ -174,4 +211,59 @@ footer {
   .header1 h1 {
     font-size: 20px;
   }
+  .work_1{
+    width: 350px;
+    height: 150px;
+  }
 }
+
+
+/*Esto es una copia chavales*/
+::-webkit-scrollbar {
+  width: 0;
+}
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: rgba(255, 255, 255, 0.05);
+}
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+#progressbar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(10px);
+}
+#progressbar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+}
+
