@@ -319,15 +319,33 @@ footer {
 }
 
 #itemCarrousel-1{
-  background-color: rgb(226, 50, 50);
+  background-image: url(/images/1218911.jpg);
+  background-position: 50%;
+  background-size: cover;
+  display: table;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 
 #itemCarrousel-2{
-  background-color: rgb(50, 200, 226);
+  background-image: url(/components/thumb2-html5-black-logo-programming-language-grid-metal-background-html5-artwork.jpg);
+  background-position: 50%;
+  background-size: cover;
+  display: table;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 
 #itemCarrousel-3{
-  background-color: rgb(200, 226, 50);
+  background-image: url(/components/skills_1.png);
+  background-position: 50%;
+  background-size: cover;
+  display: table;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 
 .conteCarrouselController{
@@ -356,3 +374,14 @@ footer {
   color: rgb(255, 0, 208);
   font-size: 40px;
 }
+#coders{
+  font-size: 50px;
+  margin-left: 30px;
+  margin-top: 20px;
+  transition: ease 0.5s;
+}
+.conteCarrousel #coders::before{
+  font-size: 60px;
+  transition: ease 0.5s;
+}
+/*deleted*/
