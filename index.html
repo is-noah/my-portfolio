@@ -35,7 +35,11 @@
     </header>
     <div class="for-back">
       <div class="myphoto">
-        <img src="/images/IMG_20220417_174004_013.jpg" class="photo" />
+        <img
+          loading="lazy"
+          src="/images/IMG_20220417_174004_013.jpg"
+          class="photo"
+        />
       </div>
       <!--Section named Presentación-->
       <section class="presentation">
@@ -86,7 +90,58 @@
         <i style="color: orange" class="fa-brands fa-git-alt"></i>
       </div>
     </section>
+    <!--Section named Services-->
+    <div class="servipack">
+    <section class="services">
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <h2>01</h2>
+            <h3>Card One</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestiae perspiciatis officia adipisci explicabo veritatis
+              doloremque reiciendis? Non delectus, similique perspiciatis earum
+              nemo nisi commodi veniam culpa unde, facilis aperiam iusto.
+            </p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <h2>02</h2>
+            <h3>Card Two</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestiae perspiciatis officia adipisci explicabo veritatis
+              doloremque reiciendis? Non delectus, similique perspiciatis earum
+              nemo nisi commodi veniam culpa unde, facilis aperiam iusto.
+            </p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <h2>03</h2>
+            <h3>Card Three</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestiae perspiciatis officia adipisci explicabo veritatis
+              doloremque reiciendis? Non delectus, similique perspiciatis earum
+              nemo nisi commodi veniam culpa unde, facilis aperiam iusto.
+            </p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
+    <!--Section named Services-->
     <footer>
       <div class="derechos">
         <p>All Rigth Reserved</p>
@@ -124,6 +179,7 @@
         ></a>
       </div>
     </footer>
+    <!--JavaScript-->
     <script type="text/javascript">
       let progress = document.getElementById("progressbar");
       let totalHeigth = document.body.scrollHeight - window.innerHeight;
@@ -132,5 +188,15 @@
         progress.style.height = progressHeight + "%";
       };
     </script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
+    <!--JavaScript-->
   </body>
 </html>
